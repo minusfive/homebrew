@@ -5,8 +5,6 @@ class Taglib <Formula
   md5 'ddf02f4e1d2dc30f76734df806e613eb'
   homepage 'http://developer.kde.org/~wheeler/taglib.html'
 
-  # depends_on 'cmake' <<< Uh, no it doesn't!
-
   def install
     system "./configure", "--enable-mp4", "--enable-asf",
                           "--disable-debug", "--prefix=#{prefix}"
